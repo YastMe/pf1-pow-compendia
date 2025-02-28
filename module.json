@@ -1,90 +1,92 @@
 {
-  "id": "path-of-war-compendia",
-  "title": "Path of War compendia",
-  "version": "1.0.0",
-  "compatibility": {
-    "minimum": "11",
-    "verified": "12"
-  },
-  "languages": [
-	{
-		"lang": "en",
-		"name": "English",
-		"path": "lang/en.json",
-		"flags": {}
-	}
-  ],
-  "packs": [
-    {
-      "name": "disciplines",
-      "label": "Disciplines",
-      "path": "packs/disciplines",
-      "type": "Item",
-      "system": "pf1",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "feats",
-      "label": "Feats",
-      "path": "packs/feats",
-      "type": "Item",
-      "system": "pf1",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "traits",
-      "label": "Traits",
-      "path": "packs/traits",
-      "type": "Item",
-      "system": "pf1",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    }
-  ],
-  "packFolders": [
-    {
-      "name": "Path of War Compendia",
-      "packs": [
-        "disciplines",
-        "feats",
-        "traits"
-      ],
-      "color": "#777777",
-      "folders": []
-    }
-  ],
-  "relationships": {
-    "requires": [
-      {
-        "id": "pf1-pow",
-        "type": "module",
-        "compatibility": {}
-      }
-    ],
-    "systems": [
-      {
-        "id": "pf1",
-        "type": "system",
-        "compatibility": {}
-      }
-    ]
-  },
-  "esmodules": [
-	"scripts/path-of-war-compendia.mjs"
-  ],
-  "authors": [
-    {
-      "name": "YastMe",
-      "discord": "YastMe",
-      "flags": {}
-    }
-  ]
+	"id": "path-of-war-compendia",
+	"title": "Path of War compendia",
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "11",
+		"verified": "12"
+	},
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json",
+			"flags": {}
+		}
+	],
+	"packs": [
+		{
+			"name": "disciplines",
+			"label": "Disciplines",
+			"path": "packs/disciplines",
+			"type": "Item",
+			"system": "pf1",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "feats",
+			"label": "Feats",
+			"path": "packs/feats",
+			"type": "Item",
+			"system": "pf1",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "traits",
+			"label": "Traits",
+			"path": "packs/traits",
+			"type": "Item",
+			"system": "pf1",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		}
+	],
+	"packFolders": [
+		{
+			"name": "Path of War Compendia",
+			"packs": [
+				"disciplines",
+				"feats",
+				"traits"
+			],
+			"color": "#777777",
+			"folders": []
+		}
+	],
+	"relationships": {
+		"requires": [
+			{
+				"id": "pf1-pow",
+				"type": "module"
+			}
+		],
+		"systems": [
+			{
+				"id": "pf1",
+				"type": "system",
+				"compatibility": {
+					"minimum": "10",
+					"verified": "11.2"
+				}
+			}
+		]
+	},
+	"esmodules": [
+		"scripts/path-of-war-compendia.mjs"
+	],
+	"authors": [
+		{
+			"name": "YastMe",
+			"discord": "YastMe",
+			"flags": {}
+		}
+	]
 }
